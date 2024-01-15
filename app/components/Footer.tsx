@@ -35,7 +35,7 @@ const Footer = () => {
         </a>
       </div>
       <div className=" flex flex-row items-center cursor-pointer mt-5 lg:mt-0">
-        <h1 className=" text-3xl font-semibold">Topo..</h1>
+        <h1 className=" text-3xl font-semibold">End...</h1>
       </div>
     </div>
   );

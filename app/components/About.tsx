@@ -1,37 +1,47 @@
 import React from "react";
 import Image from "next/image";
+import { FaArrowRight } from "react-icons/fa6";
 
 const About = () => {
   return (
     <>
-      <div className="min-h-screen flex flex-col justify-around lg:gap-8 lg:px-32 px-5 bg-white">
+      <div className="min-h-screen flex flex-col justify-center lg:px-32 px-5 bg-slate-50 pb-5">
         <div className="mt-16">
           <h1 className="text-4xl font-semibold text-center lg:mt-2 mb-24">
             About me
           </h1>
         </div>
 
-        <div className="-mb-10 flex gap-8 ">
+        <div className="-mb-10 flex gap-8 lg:flex-row items-center  ">
           <div className="mt-32 ">
             <h2 className="text-5xl font-semibold ">
-              Hi there i am Kumail abbas <br />{" "}
+              Hi there I am Kumail abbas <br />{" "}
               <span className="text-red-500">frontend</span> devloper
             </h2>
             <p className="mt-4 lg:mt-2 font-sans">
-              Hello, i am Frontend devloper With greate experience, Lorem ipsum
-              dolor sit amet consectetur adipisicing elit. <br /> Vitae quod est
-              maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
+              Welcome to my personal portfolio. I am kumail abbas, a frontend
+              developer with a passion <br /> for transforming digital
+              landscapes. My journey into the world of web development began{" "}
               <br />
-              Vitae repellendus harum dolores aliquam totam, quibusdam ab in
-              <br /> tempore deserunt animi libero
-            </p>
+              with a curiosity to build website that not only look great but
+              also function seamlessly.
+            </p>{" "}
+            <br />
+            <a
+              href=""
+              className="w-32 p-3 rounded-sm bg-orange-400 hover:bg-gray-950 hover:text-white mt-4 flex  gap-2 "
+            >
+              Hire me <FaArrowRight className="mt-1" />
+            </a>
+            <br />
+            <br />
           </div>
           <div>
             <Image
               className="rounded-lg ml-20"
-              src={"/kumail.jpg"}
+              src={"/Kumail.jpg"}
               width={570}
-              height={100}
+              height={50}
               alt="kumail"
             />
           </div>
