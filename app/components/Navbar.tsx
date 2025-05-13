@@ -33,9 +33,8 @@ const Navbar = () => {
               <Link
                 key={section}
                 href={section}
-                className={`hover:text-orange-400 transition-all duration-200 cursor-pointer font-semibold ${
-                  isActive(section) ? "text-orange-400" : ""
-                }`}
+                className={`hover:text-orange-400 transition-all duration-200 cursor-pointer font-semibold ${isActive(section) ? "text-orange-400" : ""
+                  }`}
               >
                 {section.replace("#", "").replace(/^\w/, (c) => c.toUpperCase())}
               </Link>
@@ -43,7 +42,7 @@ const Navbar = () => {
           )}
           <Link
             href="https://www.linkedin.com/in/qamar-abbas-7a39902b6/"
-            className="rounded-lg bg-red-400 p-3 hover:bg-orange-400 transition-colors duration-300 cursor-pointer font-semibold w-40 text-center"
+            className="rounded-full bg-gradient-to-r from-red-400 to-orange-400 p-3 hover:from-orange-400 hover:to-red-400 transition-all duration-300 cursor-pointer font-semibold w-40 text-center text-white shadow-lg"
           >
             Contact Us
           </Link>
@@ -69,9 +68,8 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`transform ${
-          menu ? "translate-x-0" : "translate-x-full"
-        } lg:hidden flex flex-col absolute bg-black text-white left-0 top-20 font-semibold text-2xl text-center z-10 pt-8 gap-8 w-full h-fit transition-transform duration-500 ease-in-out`}
+        className={`transform ${menu ? "translate-x-0" : "translate-x-full"
+          } lg:hidden flex flex-col absolute bg-black text-white left-0 top-20 font-semibold text-2xl text-center z-10 pt-8 gap-8 w-full h-fit transition-transform duration-500 ease-in-out`}
       >
         {[
           "#home",

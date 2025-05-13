@@ -16,7 +16,7 @@ const projects = [
     link: "https://gilgit.app",
   },
   {
-    title: "GilgitApp Shops Portal",
+    title: "GilgitApp Shops",
     description: "Manage your local business online with ease.",
     image: Project2,
     link: "https://shops.gilgit.app/login",
