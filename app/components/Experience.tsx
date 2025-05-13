@@ -1,40 +1,60 @@
+"use client";
+
 import React from "react";
+import { FaBriefcase } from "react-icons/fa6";
+
+const experiences = [
+  {
+    title: "Frontend Developer",
+    company: "Gilgit App",
+    duration: "2023 - Present",
+    description:
+      "Built responsive UI for web and mobile using React and React Native. Integrated REST APIs, implemented reusable components, and ensured mobile-first design using Tailwind CSS.",
+  },
+  {
+    title: "Web Developer",
+    company: "Freelance Projects",
+    duration: "2021 - 2023",
+    description:
+      "Delivered custom web solutions to small businesses and startups. Worked with Next.js, JavaScript/TypeScript, and Express. Focused on performance, accessibility, and user experience.",
+  },
+  {
+    title: "Intern Web Developer",
+    company: "Remote Internship",
+    duration: "2020 - 2021",
+    description:
+      "Assisted in developing internal admin panels and dashboard UIs using HTML, CSS, and React. Gained strong foundational experience in component-driven development.",
+  },
+];
 
 const Experience = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-center lg:px-32 px-5">
-      <h1 className="font-semibold text-4xl mt-16 ml-12 lg:mt-16 mb-8 lg:mb-7">
+    <section className="min-h-screen px-5 lg:px-32 py-20 bg-white">
+      <h1 className="text-4xl font-semibold text-gray-900 mb-12 text-center">
         Work History
       </h1>
-      <div className="bg-slate-100 p-5 rounded-md mt-2 lg:ml-12 sm:ml-12">
-        <h1 className="text-3xl font-normal">Lead Web Desiner</h1>
-        <p>
-          Greetings! I am kumail , your go-to Lead Web Designer, and this is
-          where digital dreams come to life. With a passion for aesthetics and a
-          flair for innovation, I specialize in crafting visually stunning and
-          highly functional web experiences that leave a lasting impression.{" "}
-          <br />
-          <span className="font-semibold">
-            {" "}
-            Discover My Design Palette:
-          </span>{" "}
-          <br /> Below, you will catch a glimpse of my recent design escapades.
-          Each project is a testament to my commitment to elevating the online
-          presence of brands and individuals alike.
-        </p>{" "}
-        <br />
-        <h1 className="text-3xl font-normal">Junior Web Desiner</h1>
-        <p>
-          Welcome to kumail is Design Corner! Hey there! I am kumail a budding
-          Junior Web Designer passionate about turning ideas into visually
-          appealing digital realities. This is my space, where creativity meets
-          code, and I am excited to share my journey with you. Below, you will
-          find a sneak peek into some of my recent design adventures. From
-          concept to creation, each project reflects my dedication to learning,
-          growing, and bringing a fresh perspective to the digital landscape
-        </p>
+
+      <div className="space-y-10">
+        {experiences.map((exp, index) => (
+          <div
+            key={index}
+            className="bg-slate-100 p-6 rounded-md shadow-md transition duration-300 hover:shadow-lg"
+          >
+            <div className="flex items-center gap-4 mb-2">
+              <FaBriefcase className="text-orange-500 text-xl" />
+              <h2 className="text-2xl font-semibold text-gray-800">
+                {exp.title}
+              </h2>
+            </div>
+            <div className="text-gray-600 text-sm mb-2">
+              <span className="font-medium">{exp.company}</span> —{" "}
+              <span>{exp.duration}</span>
+            </div>
+            <p className="text-gray-700 leading-relaxed">{exp.description}</p>
+          </div>
+        ))}
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,43 +1,67 @@
+"use client";
+
 import React from "react";
 import { BsInstagram } from "react-icons/bs";
 import { FaFacebook, FaLinkedin, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <div className=" flex flex-col lg:flex-row justify-between lg:px-32 px-5 bg-white p-5">
-      <div className=" flex gap-10">
-        <a href="https://www.linkedin.com/in/qamar-abbas-7a39902b6/">
-          <BsInstagram
-            size={32}
-            className=" hover:text-brightColor transition-all cursor-pointer"
-          />
-        </a>
+    <footer className="bg-white border-t mt-16 py-6 px-5 lg:px-32 text-gray-700">
+      <div className="flex flex-col lg:flex-row justify-between items-center gap-4">
+        <div className="flex gap-6">
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <BsInstagram
+              size={28}
+              className="hover:text-orange-500 transition-all cursor-pointer"
+            />
+          </a>
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+          >
+            <FaFacebook
+              size={28}
+              className="hover:text-orange-500 transition-all cursor-pointer"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/qamar-abbas-7a39902b6/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <FaLinkedin
+              size={28}
+              className="hover:text-orange-500 transition-all cursor-pointer"
+            />
+          </a>
+          <a
+            href="https://www.youtube.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="YouTube"
+          >
+            <FaYoutube
+              size={28}
+              className="hover:text-orange-500 transition-all cursor-pointer"
+            />
+          </a>
+        </div>
 
-        <a href="https://www.linkedin.com/in/qamar-abbas-7a39902b6/">
-          <FaFacebook
-            size={32}
-            className=" hover:text-brightColor transition-all cursor-pointer"
-          />
-        </a>
-
-        <a href="https://www.linkedin.com/in/qamar-abbas-7a39902b6/">
-          <FaLinkedin
-            size={32}
-            className=" hover:text-brightColor transition-all cursor-pointer"
-          />
-        </a>
-
-        <a href="https://www.linkedin.com/in/qamar-abbas-7a39902b6/">
-          <FaYoutube
-            size={32}
-            className=" hover:text-brightColor transition-all cursor-pointer"
-          />
-        </a>
+        <div className="text-sm text-center lg:text-right">
+          © {currentYear} Qamar Abbas — Web & Mobile App Developer. All rights reserved.
+        </div>
       </div>
-      <div className=" flex flex-row items-center cursor-pointer mt-5 lg:mt-0">
-        <h1 className=" text-3xl font-semibold">End...</h1>
-      </div>
-    </div>
+    </footer>
   );
 };
 

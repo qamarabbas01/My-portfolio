@@ -1,80 +1,63 @@
+"use client";
+
 import React from "react";
-import { AiOutlineCodepen } from "react-icons/ai";
-import { BiCodeAlt } from "react-icons/bi";
-import { BsAndroid, BsWordpress } from "react-icons/bs";
-import { GrApple } from "react-icons/gr";
-import { PiGameControllerFill } from "react-icons/pi";
+import { SiJavascript, SiTypescript, SiReact, SiExpo, SiNodedotjs } from "react-icons/si";
+import { FaMobileAlt, FaTerminal } from "react-icons/fa";
 
-const Services = () => {
+const skills = [
+  {
+    title: "JavaScript",
+    icon: <SiJavascript size={40} className="text-yellow-400" />,
+    description: "Core scripting language for web and app development.",
+  },
+  {
+    title: "TypeScript",
+    icon: <SiTypescript size={40} className="text-blue-500" />,
+    description: "Typed superset of JavaScript for scalable codebases.",
+  },
+  {
+    title: "React JS",
+    icon: <SiReact size={40} className="text-cyan-500" />,
+    description: "Modern frontend framework for building UIs.",
+  },
+  {
+    title: "React Native",
+    icon: <FaMobileAlt size={40} className="text-purple-500" />,
+    description: "Cross-platform mobile apps for iOS and Android.",
+  },
+  {
+    title: "Expo",
+    icon: <SiExpo size={40} className="text-black" />,
+    description: "Framework and platform for universal React Native apps.",
+  },
+  {
+    title: "CLI Tools",
+    icon: <FaTerminal size={40} className="text-gray-600" />,
+    description: "Powerful development with command-line interfaces.",
+  },
+];
+
+const Skills = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-center  lg:px-32 px-5 bg-white">
-      <h1 className="text-center font-semibold text-4xl  lg:mt-14 lg:mb-4">
-        My Services
-      </h1>
+    <section className="min-h-full bg-white px-5 lg:px-32 py-20">
+      <h1 className="text-4xl font-semibold text-center mb-12">Tech Stack</h1>
 
-      <div className="flex flex-wrap items-center justify-center gap-5 mt-4 mb-32">
-        <div className="bg-orange-400 flex flex-col items-center  hover:bg-black hover:text-white transition-all hover:-translate-y-2 w-full lg:w-1/4 py-5 gap-4 cursor-pointer rounded-md">
-          <div>
-            <span>
-              <BiCodeAlt size={55} />
-            </span>
+      <div className="flex flex-wrap justify-center gap-8">
+        {skills.map((skill, index) => (
+          <div
+            key={index}
+            className="bg-slate-100 w-full sm:w-[45%] lg:w-1/4 p-6 rounded-lg text-center shadow-sm transition-transform hover:-translate-y-2 hover:shadow-md"
+          >
+            <div className="mb-4 flex justify-center">{skill.icon}</div>
+            <h2 className="text-xl font-semibold text-gray-800 mb-2">
+              {skill.title}
+            </h2>
+            <p className="text-sm text-gray-600">{skill.description}</p>
           </div>
-          <h2 className=" text-xl font-semibold">Web Devlopment</h2>
-          <p>blog, e-commerce</p>
-        </div>
-
-        <div className="bg-orange-400 flex flex-col items-center  hover:bg-black hover:text-white transition-all hover:-translate-y-2 w-full lg:w-1/4 py-5 gap-4 cursor-pointer rounded-md">
-          <div>
-            <span>
-              <BsAndroid size={55} />
-            </span>
-          </div>
-          <h2 className=" text-xl font-semibold">Mobile Devlopment</h2>
-          <p>blog, e-commerce</p>
-        </div>
-
-        <div className="bg-orange-400 flex flex-col items-center  hover:bg-black hover:text-white transition-all hover:-translate-y-2 w-full lg:w-1/4 py-5 gap-4 cursor-pointer rounded-md">
-          <div>
-            <span>
-              <GrApple size={55} />
-            </span>
-          </div>
-          <h2 className=" text-xl font-semibold">Ios development</h2>
-          <p>blog, e-commerce</p>
-        </div>
-
-        <div className="bg-orange-400 flex flex-col items-center  hover:bg-black hover:text-white transition-all hover:-translate-y-2 w-full lg:w-1/4 py-5 gap-4 cursor-pointer rounded-md">
-          <div>
-            <span>
-              <AiOutlineCodepen size={55} />
-            </span>
-          </div>
-          <h2 className=" text-xl font-semibold">Freelancing</h2>
-          <p>blog, e-commerce</p>
-        </div>
-
-        <div className="bg-orange-400 flex flex-col items-center  hover:bg-black hover:text-white transition-all hover:-translate-y-2 w-full lg:w-1/4 py-5 gap-4 cursor-pointer rounded-md">
-          <div>
-            <span>
-              <PiGameControllerFill size={55} />
-            </span>
-          </div>
-          <h2 className=" text-xl font-semibold">Game Devlopment</h2>
-          <p>blog, e-commerce</p>
-        </div>
-
-        <div className="bg-orange-400 flex flex-col items-center  hover:bg-black hover:text-white transition-all hover:-translate-y-2 w-full lg:w-1/4 py-5 gap-4 cursor-pointer rounded-md">
-          <div>
-            <span>
-              <BsWordpress size={55} />
-            </span>
-          </div>
-          <h2 className=" text-xl font-semibold">WordPress</h2>
-          <p>blog, e-commerce</p>
-        </div>
+        ))}
       </div>
-    </div>
+    </section>
   );
 };
 
-export default Services;
+export default Skills;
