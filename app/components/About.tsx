@@ -1,103 +1,81 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa6";
 
+const skills = [
+  { name: "HTML", level: 90 },
+  { name: "CSS", level: 85 },
+  { name: "JavaScript", level: 95 },
+  { name: "TypeScript", level: 80 },
+  { name: "React JS/TS", level: 85 },
+  { name: "React Native", level: 80 },
+  { name: "Next.js", level: 75 },
+];
+
 const About = () => {
   return (
-    <>
-      <div className="min-h-screen flex flex-col justify-center lg:px-32 px-5 bg-slate-50 pb-5">
-        <div className="mt-16">
-          <h1 className="text-4xl font-semibold text-center lg:mt-2 mb-24">
-            About me
-          </h1>
+    <section className="min-h-screen px-5 lg:px-32 py-24 bg-slate-50">
+      <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">About Me</h2>
+      <div className="flex flex-col-reverse lg:flex-row items-center gap-16 mb-20">
+        <div className="flex-1 space-y-6 text-center lg:text-left">
+          <h3 className="text-4xl font-semibold">
+            I&apos;m <span className="text-red-500">Qamar Abbas</span>
+          </h3>
+          <p className="text-lg text-gray-700 font-medium">
+            Web & Mobile App Developer | 3+ Years Experience
+          </p>
+          <p className="text-gray-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            I specialize in creating fast, responsive, and scalable applications using modern
+            web and mobile technologies. From interactive websites to high-performance mobile
+            apps, I focus on delivering clean code and intuitive user experiences.
+            <br /><br />
+            With a deep understanding of tools like <strong>React</strong>, <strong>Next.js</strong>, and <strong>React Native</strong>,
+            I’ve worked on live production apps, helping startups and businesses build beautiful products.
+          </p>
+          <a
+            href="mailto:your-email@example.com"
+            className="inline-flex items-center gap-2 bg-orange-500 hover:bg-black hover:text-white text-white px-6 py-3 rounded-md font-medium transition-all duration-300"
+          >
+            Hire Me <FaArrowRight />
+          </a>
         </div>
 
-        <div className="-mb-10 flex gap-8 lg:flex-row items-center  ">
-          <div className="mt-32 ">
-            <h2 className="text-5xl font-semibold ">
-              Hi there I am Kumail abbas <br />{" "}
-              <span className="text-red-500">frontend</span> devloper
-            </h2>
-            <p className="mt-4 lg:mt-2 font-sans">
-              Welcome to my personal portfolio. I am kumail abbas, a frontend
-              developer with a passion <br /> for transforming digital
-              landscapes. My journey into the world of web development began{" "}
-              <br />
-              with a curiosity to build website that not only look great but
-              also function seamlessly.
-            </p>{" "}
-            <br />
-            <a
-              href=""
-              className="w-32 p-3 rounded-sm bg-orange-400 hover:bg-gray-950 hover:text-white mt-4 flex  gap-2 "
-            >
-              Hire me <FaArrowRight className="mt-1" />
-            </a>
-            <br />
-            <br />
-          </div>
-          <div>
-            <Image
-              className="rounded-lg ml-20"
-              src={"/Kumail.jpg"}
-              width={570}
-              height={50}
-              alt="kumail"
-            />
-          </div>
-        </div>
-        <div>
-          <h2 className="text-3xl font-bold text-rose-800">My Skills</h2>
-        </div>
-        <div>
-          <h3 className="mt-3 text-xl font-bold">HTML</h3>
-          <div>
-            <h3 className="text-end">90%</h3>
-            <div className="w-full h-2 bg-slate-300 rounded-full">
-              <div className={`w-[90%] h-2 bg-orange-500 rounded-full `}></div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <h3 className="mt-3 text-xl font-bold">CSS</h3>
-          <div>
-            <h3 className="text-end">80%</h3>
-            <div className="w-full h-2 bg-slate-300 rounded-full">
-              <div className={`w-[80%] h-2 bg-orange-500 rounded-full `}></div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <h3 className="mt-3 text-xl font-bold">JavaScript</h3>
-          <div>
-            <h3 className="text-end">95%</h3>
-            <div className="w-full h-2 bg-slate-300 rounded-full">
-              <div className={`w-[95%] h-2 bg-orange-500 rounded-full `}></div>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <h3 className="mt-3 text-xl font-bold">TypeScript</h3>
-          <div>
-            <h3 className="text-end">75%</h3>
-            <div className="w-full h-2 bg-slate-300 rounded-full">
-              <div className={`w-[75%] h-2 bg-orange-500 rounded-full `}></div>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <h3 className="mt-3 text-xl font-bold">React JS/TS</h3>
-          <div>
-            <h3 className="text-end">80%</h3>
-            <div className="w-full h-2 bg-slate-300 rounded-full">
-              <div className={`w-[80%] h-2 bg-orange-500 rounded-full `}></div>
-            </div>
-          </div>
+        <div className="flex-1 flex justify-center">
+          <Image
+            src={require("../assets/mypic.jpg")}
+            width={500}
+            height={500}
+            alt="Qamar Abbas"
+            className="rounded-lg shadow-lg object-cover"
+            priority
+          />
         </div>
       </div>
-    </>
+
+      <div className="mt-10">
+        <h3 className="text-3xl font-bold text-rose-700 mb-6 text-center lg:text-left">
+          My Skills
+        </h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {skills.map((skill) => (
+            <div key={skill.name}>
+              <div className="flex justify-between mb-1">
+                <span className="text-base font-semibold">{skill.name}</span>
+                <span className="text-sm font-medium text-gray-600">{skill.level}%</span>
+              </div>
+              <div className="w-full h-2 bg-gray-300 rounded-full">
+                <div
+                  className="h-2 bg-orange-500 rounded-full transition-all duration-500"
+                  style={{ width: `${skill.level}%` }}
+                ></div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 };
 

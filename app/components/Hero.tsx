@@ -1,38 +1,45 @@
 "use client";
+
 import React from "react";
 import { BsArrowRightShort } from "react-icons/bs";
 import Image from "next/image";
 
 const Hero: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-center lg:flex-row items-center lg:px-32 px-5 ">
-      <div className="flex flex-col text-center lg:text-start lg:items-start w-full lg:w-3/4 space-y-4 pt-56">
-        <h1 className="text-6xl font-semibold ">
-          I am Kumail Abbas <br />
-          <span className="text-red-400">Front-end </span>
-          Developer
+    <section className="min-h-screen flex flex-col-reverse lg:flex-row items-center justify-center px-5 lg:px-28 bg-white">
+      <div className="w-full lg:w-3/4 flex flex-col items-center lg:items-start text-center lg:text-left space-y-6 pt-20 lg:pt-0">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-gray-900">
+          I’m Qamar Abbas <br />
+          <span className="text-red-500">Web & Mobile App Developer</span>
         </h1>
-        <p className="text-lg font-sans ">
-          Hello there! I am Kumail Abbas, a passionate frontend developer
-          dedicated to crafting immersive and user-friendly web experiences.
-          Whether it is building pixel-perfect interfaces or bringing ideas to
-          life through code, I thrive on turning concepts into captivating
-          digital realities.
+
+        <p className="text-lg text-gray-700 max-w-2xl">
+          A passionate developer with <strong>3+ years of experience</strong> in
+          building responsive web and mobile applications. I specialize in
+          creating clean UI/UX, scalable components, and seamless user
+          experiences using technologies like <strong>React</strong>,{" "}
+          <strong>Next.js</strong>, <strong>React Native</strong>, and{" "}
+          <strong>Expo</strong>.
         </p>
-        <div>
-          <button className="flex flex-row justify-center items-center gap-3 bg-orange-400 hover:bg-black hover:text-white transition-all px-4 py-2 rounded-md cursor-pointer  ">
-            Hire Me <BsArrowRightShort />
-          </button>
-        </div>
+
+        <button
+          onClick={() => window.location.href = "https://www.linkedin.com/in/qamar-abbas-7a39902b6/"}
+          className="inline-flex items-center gap-2 bg-orange-500 text-white hover:bg-black hover:text-white transition-all px-6 py-3 rounded-md text-base font-medium shadow-md">
+          Hire Me <BsArrowRightShort size={24} />
+        </button>
       </div>
-      <Image
-        className="rounded"
-        src={"/Hero1.jpg"}
-        width={670}
-        height={100}
-        alt="kumail"
-      />
-    </div>
+
+      <div className="w-full lg:w-1/2 mb-10 lg:mb-0 flex justify-center">
+        <Image
+          src={require("../assets/mypic.jpg")}
+          width={500}
+          height={500}
+          alt="Qamar Abbas portrait"
+          className="rounded-lg object-cover shadow-lg"
+          priority
+        />
+      </div>
+    </section>
   );
 };
 
