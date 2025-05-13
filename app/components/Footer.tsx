@@ -6,28 +6,28 @@ const Footer = () => {
   return (
     <div className=" flex flex-col lg:flex-row justify-between lg:px-32 px-5 bg-white p-5">
       <div className=" flex gap-10">
-        <a href="https://www.instagram.com/_kumail.5/">
+        <a href="https://www.linkedin.com/in/qamar-abbas-7a39902b6/">
           <BsInstagram
             size={32}
             className=" hover:text-brightColor transition-all cursor-pointer"
           />
         </a>
 
-        <a href="https://www.facebook.com/profile.php?id=100088652534308">
+        <a href="https://www.linkedin.com/in/qamar-abbas-7a39902b6/">
           <FaFacebook
             size={32}
             className=" hover:text-brightColor transition-all cursor-pointer"
           />
         </a>
 
-        <a href="https://www.linkedin.com/learning/">
+        <a href="https://www.linkedin.com/in/qamar-abbas-7a39902b6/">
           <FaLinkedin
             size={32}
             className=" hover:text-brightColor transition-all cursor-pointer"
           />
         </a>
 
-        <a href="https://www.youtube.com/@game.space72">
+        <a href="https://www.linkedin.com/in/qamar-abbas-7a39902b6/">
           <FaYoutube
             size={32}
             className=" hover:text-brightColor transition-all cursor-pointer"
