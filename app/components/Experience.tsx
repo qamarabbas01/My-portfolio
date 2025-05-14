@@ -7,7 +7,7 @@ const experiences = [
   {
     title: "Frontend Developer",
     company: "Gilgit App",
-    duration: "2023 - Present",
+    duration: "2023 - 2025",
     description:
       "Built responsive UI for web and mobile using React and React Native. Integrated REST APIs, implemented reusable components, and ensured mobile-first design using Tailwind CSS.",
   },

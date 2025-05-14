@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
           width={500}
           height={500}
           alt="Qamar Abbas portrait"
-          className="rounded-lg object-cover shadow-lg"
+          className="rounded-full object-cover shadow-lg"
           priority
         />
       </div>
