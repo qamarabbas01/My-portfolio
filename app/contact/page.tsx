@@ -45,7 +45,6 @@ export default function ContactPage() {
             />
           </div>
         </div>
-
         <div className="bg-white rounded-xl shadow-lg p-6">
           {!submitted ? (
             <form onSubmit={handleSubmit} className="space-y-5">

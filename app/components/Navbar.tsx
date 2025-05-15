@@ -41,7 +41,7 @@ const Navbar = () => {
             )
           )}
           <Link
-            href="https://www.linkedin.com/in/qamar-abbas-7a39902b6/"
+            href="/contact"
             className="rounded-full bg-gradient-to-r from-red-400 to-orange-400 p-3 hover:from-orange-400 hover:to-red-400 transition-all duration-300 cursor-pointer font-semibold w-40 text-center text-white shadow-lg"
           >
             Contact Us
