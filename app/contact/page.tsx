@@ -36,12 +36,12 @@ export default function ContactPage() {
             <ContactLink
               href="https://www.linkedin.com/in/qamar-abbas-7a39902b6/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BVXEC3UuLS9KM0Ypg1zC7aQ%3D%3D"
               icon={<LiaLinkedin className="w-5 h-5" />}
-              label="linkedin.com/in/your-profile"
+              label="linkedin.com/in/qamar-abbas-7a39902b6"
             />
             <ContactLink
               href="https://github.com/qamarabbas01"
               icon={<BsGithub className="w-5 h-5" />}
-              label="github.com/your-github"
+              label="github.com/qamarabbas01"
             />
           </div>
         </div>
@@ -49,7 +49,7 @@ export default function ContactPage() {
           {!submitted ? (
             <form onSubmit={handleSubmit} className="space-y-5">
               <input
-                type="text"
+                type="name"
                 name="name"
                 placeholder="Your Name"
                 value={formData.name}
