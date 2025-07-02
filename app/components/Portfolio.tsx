@@ -37,13 +37,13 @@ const projects = [
     title: "Travelling Website",
     description: "A Simple travelling website to explore the Gilgit Baltistan.",
     image: Project5,
-    link: "https://my-portfolio-tau-taupe-95.vercel.app/",
+    link: "https://majestic-tours.vercel.app/",
   },
   {
     title: 'Persoanl Website',
     description: "A personal portfolio website to showcase my work.",
     image: Project6,
-    link: "https://task-manager-rosy.vercel.app/",
+    link: "https://my-portfolio-tau-taupe-95.vercel.app/",
   }
 ];
 
