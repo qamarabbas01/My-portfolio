@@ -31,7 +31,7 @@ const skills = [
     description: "Framework and platform for universal React Native apps.",
   },
   {
-    title: "CLI",
+    title: "React Native CLI",
     icon: <FaTerminal size={40} className="text-gray-600" />,
     description: "Powerful development with command-line interfaces.",
   },
