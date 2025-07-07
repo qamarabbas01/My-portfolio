@@ -26,7 +26,7 @@ const skills = [
     description: "Cross-platform mobile apps for iOS and Android.",
   },
   {
-    title: "Expo",
+    title: "React Native Expo",
     icon: <SiExpo size={40} className="text-black" />,
     description: "Framework and platform for universal React Native apps.",
   },
