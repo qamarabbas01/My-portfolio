@@ -20,7 +20,7 @@ const experiences = [
   },
   {
     title: "Intern Web Developer",
-    company: "Remote Internship",
+    company: "Internship",
     duration: "2020 - 2021",
     description:
       "Assisted in developing internal admin panels and dashboard UIs using HTML, CSS, and React. Gained strong foundational experience in component-driven development.",
