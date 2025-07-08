@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="flex flex-col lg:flex-row justify-between items-center gap-4">
         <div className="flex gap-6">
           <a
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/qamarabbas_14/?hl=en"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
@@ -23,7 +23,7 @@ const Footer = () => {
             />
           </a>
           <a
-            href="https://www.facebook.com/"
+            href="https://www.facebook.com/profile.php?id=100080955650112"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook"
