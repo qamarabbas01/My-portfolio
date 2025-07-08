@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
         </h1>
 
         <p className="text-lg text-gray-700 max-w-2xl">
-          A passionate developer with <strong>3+ years of experience</strong> in
+          A passionate developer with <strong>4+ years of experience</strong> in
           building responsive web and mobile applications. I specialize in
           creating clean UI/UX, scalable components, and seamless user
           experiences using technologies like <strong>React</strong>,{" "}
@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
         </button>
       </div>
 
-      <div className="w-full lg:w-1/2 mb-10 lg:mb-0 flex justify-center">
+      <div className="w-full lg:w-1/2 hidden lg:flex my-10 lg:mb-0 justify-center">
         <Image
           src={require("../assets/mypic.jpg")}
           width={500}

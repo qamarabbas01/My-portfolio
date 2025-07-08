@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 const page = () => {
   return (
     <div>
-      <div id="navbar">
+      <div id="navbar" className="fixed w-full z-10 bg-white shadow-md transition-all duration-300">
         <Navbar />
       </div>
 
