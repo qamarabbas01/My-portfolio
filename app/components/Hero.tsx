@@ -13,13 +13,14 @@ const Hero: React.FC = () => {
           <span className="text-red-500">Web & Mobile App Developer</span>
         </h1>
 
-        <p className="text-lg text-gray-700 max-w-2xl">
-          A passionate developer with <strong>3+ years of experience</strong> in
-          building responsive web and mobile applications. I specialize in
-          creating clean UI/UX, scalable components, and seamless user
-          experiences using technologies like <strong>React</strong>,{" "}
+        <p className="text-lg text-gray-700 max-w-2xl leading-relaxed">
+          Transforming ideas into exceptional digital experiences with{" "}
+          <strong>3+ years of expertise</strong> in front-end development. 
+          I craft intuitive, high-performance web and mobile applications
+          using cutting-edge technologies like <strong>React</strong>,{" "}
           <strong>Next.js</strong>, <strong>React Native</strong>, and{" "}
-          <strong>Expo</strong>.
+          <strong>Expo</strong> — delivering scalable solutions that users love
+          and businesses trust.
         </p>
 
         <button
