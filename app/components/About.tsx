@@ -6,12 +6,13 @@ import { FaArrowRight } from "react-icons/fa6";
 
 const skills = [
   { name: "HTML", level: 90 },
-  { name: "CSS", level: 85 },
-  { name: "JavaScript", level: 95 },
-  { name: "TypeScript", level: 80 },
+  { name: "CSS/Tailwind CSS", level: 85 },
+  { name: "JavaScript/TypeScript", level: 95 },
   { name: "React JS/TS", level: 85 },
   { name: "React Native", level: 80 },
-  { name: "Next.js", level: 75 },
+  { name: "Next.js", level: 80 },
+  { name: "Svelte JS/TS", level: 80 },
+  { name: "IOS/Android Development", level: 90 },
 ];
 
 const About = () => {
