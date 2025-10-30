@@ -28,22 +28,22 @@ const projects = [
     link: "https://school-management-system-roan.vercel.app",
   },
   {
-    title: "Hootsuite Clone",
+    title: "Hootsuite Social Media Management",
     description: "Frontend clone of Hootsuite for social media management.",
     image: Project4,
     link: "https://hootsuite-cyan.vercel.app",
   },
   {
-    title: "Travelling Website",
+    title: "Majestic Tours",
     description: "A Simple travelling website to explore the Gilgit Baltistan.",
     image: Project5,
-    link: "https://my-portfolio-tau-taupe-95.vercel.app/",
+    link: "https://majestic-tours.vercel.app/",
   },
   {
-    title: 'Persoanl Website',
+    title: 'My Portfolio',
     description: "A personal portfolio website to showcase my work.",
     image: Project6,
-    link: "https://task-manager-rosy.vercel.app/",
+    link: "https://my-portfolio-tau-taupe-95.vercel.app/",
   }
 ];
 
